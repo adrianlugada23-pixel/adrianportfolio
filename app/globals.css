@@ -1,0 +1,229 @@
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+
+/* NAVBAR */
+nav {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+nav h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* CARD DESIGN */
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* CARD HOVER */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15);
+}
+
+/* LISTS */
+ul li {
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+/* DARK MODE BUTTON */
+#darkModeToggle {
+  margin-left: 20px;
+}
+
+/* IMAGES */
+img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 18px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* IMAGE HOVER */
+img:hover {
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+
+/* ================= LIGHT MODE ================= */
+
+.light-mode {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.light-mode nav {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.light-mode nav a {
+  color: #0f172a;
+}
+
+.light-mode nav a:hover {
+  color: white;
+}
+
+.light-mode p,
+.light-mode ul li {
+  color: #334155;
+}
+
+.light-mode .card {
+  background: white;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode footer {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
